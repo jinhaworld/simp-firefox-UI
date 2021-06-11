@@ -1,0 +1,42 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); 
+
+.tabbrowser-tab .tab-stack {
+    border-radius: 15px 15px 15px 15px;
+    overflow: hidden;
+} 
+
+.tab-background[selected="true"] {
+    background-color: #6061a1 !important; 
+}
+
+.tab-background {
+    background-color: #6ca198 !important;
+    background-image: none !important;
+} 
+
+toolbar#TabsToolbar {
+    -moz-appearance: none !important;
+    background-color: #78b4d6 !important;
+} 
+
+.tabbrowser-tab[fadein]:not([pinned]) { 
+    max-width: 70px !important; 
+    /* max-height: 30px !important;  */
+} 
+
+.tabbrowser-tab .tab-close-button{
+    display:none;
+}
+
+.tabbrowser-tab:not([pinned]):hover .tab-close-button{
+    display:-moz-box !important; 
+}
+
+#urlbar-background {
+    background: rgb(140, 147, 158) !important; 
+} 
+
+menubar, toolbox, toolbar, .tabbrowser-tabs {
+    background-image: url(img/tool_bar.jpg) !important;
+    background-color: none !important;
+} 
